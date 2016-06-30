@@ -1,0 +1,88 @@
+body {
+    background: url("../images/home-background-canoe.jpg") top left no-repeat ;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+#wrapper {
+    margin-top: 20px;
+    background: rgba(255,255,255,0);
+    max-width: 1200px; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+#header {
+    position: absolute;
+    top:33%;
+    left: 69%;
+    transform: translateX(-50%);
+    //margin-bottom: 20px;
+    /*background: rgba(255,255,255,0.9);*/
+}
+#signature {
+    padding-left: 20px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#tagline {
+    display: none;
+    margin-top: 10px;
+    text-align: center;
+    color: black;
+    letter-spacing: 0.91px;
+    font-weight: bold;
+    font-size: 18px;
+}
+#specialties{
+    list-style-type: none;
+    font-size: 20px;
+    text-align: center;
+    padding-left: 0;
+    margin-top: 15px;
+}
+#specialties li {
+    margin: 10px;
+    color: #2C3539;
+}
+#social-icons {
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: center;
+}
+#social-icons a {
+    color: black;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#content-row {
+    margin-top: 15%;
+}
+.content-box {
+    background-color: white;
+    opacity: .8;
+    padding: 10px;
+    //margin-left: 20px;
+}
+.content-box ul {
+    list-style-type: none;
+    padding-left: 5px;
+    max-width: 50%;
+}
+
+
+.gold-block {
+    background-color: #EFB04F;
+    height: 200px;
+}
+.green-block {
+    background-color: #015D87;
+    height: 200px;
+}
+.left-block {
+    padding-right: 5px;
+}
+.right-block {
+    padding-left: 5px;
+}
