@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Andrew Southard | </title>
+<title>Andrew Southard | Thoughtful, detailed, software design</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,10 +10,10 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar">
 <div id="wrapper" class="container-fluid">
     <div class="row" id="header">
-        <div class="col-md-12">
+        <div id="navbar" class="col-md-12">
             <img id="signature" class="img-responsive" src="images/signature-new.png" alt="Andrew Southard" >
             <div id="social-icons">
                 <a class="social-icon" target="_blank" href="mailto:info@andrewsouthard.com"><span class="fa fa-2x fa-envelope-o"></span></a>
@@ -21,16 +21,88 @@
                 <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/andrew-southard-32832418"><span class="fa fa-2x fa-linkedin"></span></a>
             </div>
             <h4 id="tagline">Thoughtful, experienced, professional.</h4>
-            <ul id="specialties">
-            <li style="color: black">Linux</li>
-            <li>Software</li>
-            <li>Personalized</li>
-            </ul>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="navbar-contents" class="navbar-collapse collapse">
+                        <ul id="specialties" class="nav navbar-nav">
+                            <li><a href="#about">About Me</a></li>
+                            <li><a href="#linux">Linux</a></li>
+                            <li><a href="#software">Software</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
     </div>
     <div class="row" id="content-row">
         <div class="col-md-6">
-            <div class="content-box">
+            <div class="content-box" id="about">
+                <h4>About Me</h4>
+                <ul>
+                    <li>AngularJS</li>
+                    <li>Bootstrap</li>
+                    <li>Mojolicious</li>
+                    <li>Extensive Linux Experience</li>
+                </ul>
+                <h4>Programming Languages</h4>
+                <ul>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>Javascript</li>
+                    <li>TCL</li>
+                    <li>Perl</li>
+                    <li>Python</li>
+                </ul>
+                <h4>Programming Languages</h4>
+                <ul>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>Javascript</li>
+                    <li>TCL</li>
+                    <li>Perl</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+            <div class="content-box" id="linux">
+                <h4>Linux Experience</h4>
+                <ul>
+                    <li>AngularJS</li>
+                    <li>Bootstrap</li>
+                    <li>Mojolicious</li>
+                    <li>Extensive Linux Experience</li>
+                </ul>
+                <h4>Programming Languages</h4>
+                <ul>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>Javascript</li>
+                    <li>TCL</li>
+                    <li>Perl</li>
+                    <li>Python</li>
+                </ul>
+                <h4>Programming Languages</h4>
+                <ul>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>Javascript</li>
+                    <li>TCL</li>
+                    <li>Perl</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+            <div class="content-box" id="software">
                 <h4>Markup and Frameworks</h4>
                 <ul>
                     <li>AngularJS</li>
@@ -61,43 +133,24 @@
             </div>
         </div>
     </div>
-    <!--
-    <div class="row">
-        <div class="col-md-7 left-block">
-            <div class="gold-block">
-                hi cuz
-            </div>
-        </div>
-        <div class="col-md-5 right-block">
-            <div class="green-block">
-                hi cuz
-            </div>
-        </div>
-    </div>
-    <div class="row" style="margin-top: 20px">
-        <div class="col-md-7 left-block">
-            <div class="green-block">
-                hi cuz
-            </div>
-        </div>
-        <div class="col-md-5 right-block">
-            <div class="gold-block">
-                hi cuz
-            </div>
-        </div>
-    </div>
--->
 </div>
 <!-- Javascript -->
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script type="text/javascript">
+$('body').scrollspy({ target: '#navbar', offset: 400, })
 /*
 $( document ).ready(function() {
         $("#header")
         .delay(9800).animate({ top: "0%", left: "50%", transform: "translateX(-50%)"}, 3000);
 });
 */
+// Smoothly scroll to the anchor when it is clicked.
+$("a").click(function(event) {
+    var offset = 210;
+    event.preventDefault();
+    $('html, body').animate({scrollTop: $($.attr(this, 'href') ).offset().top-offset}, 500);
+});
 </script>
 </body>
 </html>
