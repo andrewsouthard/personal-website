@@ -1,0 +1,2 @@
+# Don't include dev assets such as original images.
+dev-assets/
