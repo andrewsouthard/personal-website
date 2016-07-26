@@ -63,6 +63,10 @@ nav {
     padding-top: 10px;
     color: #2C3539;
 }
+#specialties li a:focus {
+    outline:none;
+    color: #BC0000;
+}
 #social-icons {
     font-size: 14px;
     margin-top: 15px;
@@ -133,6 +137,9 @@ nav {
     }
 }
 @media (max-width: 768px) {
+    body {
+        background: none;
+    }
     /* Set the position to relative and the minimum height so the top-content
      * will have space to be displayed. */
     #navbar {
@@ -147,6 +154,9 @@ nav {
         left: 50%;
         transform: translateX(-50%);
     }
+    .content-box {
+        border: 1px solid #2C3539;
+    }
 }
 @media (max-width: 500px) {
     #top-content {
@@ -158,5 +168,9 @@ nav {
     #specialties li {
         display: block;
         margin-bottom: 0px;
+    }
+    .content-box {
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
