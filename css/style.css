@@ -68,7 +68,6 @@ nav {
     color: #BC0000;
 }
 #social-icons {
-    font-size: 14px;
     margin-top: 15px;
     text-align: center;
 }
@@ -76,6 +75,14 @@ nav {
     color: black;
     margin-left: 5px;
     margin-right: 5px;
+    vertical-align: middle;
+}
+#social-icons a span {
+    font-size: 28px;
+}
+/* Make the medium icon a little smaller */
+#social-icons > :last-child span {
+    font-size: 26px;
 }
 .content-box {
     margin-bottom: 80%;
@@ -90,14 +97,7 @@ nav {
     list-style-type: none;
     padding-left: 15px;
     max-width: 50%;
-}
-#linux.content-box ul {
-    max-width: 90%;
-    list-style-type: initial;
     margin-left: 15px;
-}
-#linux.content-box ul li {
-    margin-bottom: 10px;
 }
 
 .content-box h3 {
@@ -108,14 +108,20 @@ nav {
 .content-box h4 {
     margin-top: 20px;
 }
-#about.content-box p {
+.content-box p {
     letter-spacing: 0.25px;
     line-height: 25px;
 }
 .content-box a {
     color: #BC0000;
 }
-
+#projects-list {
+    list-style-type: none;
+    padding-left: 0px;
+}
+#projects-list li {
+    padding-bottom: 5px;
+}
 @media (max-width: 1200px) {
     #header {
         position: relative;
