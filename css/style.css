@@ -1,182 +1,41 @@
-body {
-    background: url("../images/home-background-canoe.jpg") top left no-repeat ;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
+html {
+  font-family: "Ubuntu", sans-serif;
 }
-#wrapper {
-    margin-top: 20px;
-    background: rgba(255,255,255,0);
-    max-width: 1200px; 
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+#intro {
+  max-width: 600px;
 }
-#header {
-    position: fixed;
-    top:33%;
-    left: 69%;
-    transform: translateX(-50%);
+#intro .profile-picture {
+  width: 100%;
+  max-width: 200px;
 }
-#signature {
-    padding-left: 20px;
-    margin-top: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+#intro .description {
+  flex-direction: column;
+  justify-content: space-around;
 }
-#tagline {
-    display: none;
-    margin-top: 10px;
-    text-align: center;
-    color: black;
-    letter-spacing: 0.91px;
-    font-weight: bold;
-    font-size: 18px;
+#intro .description .image {
+  margin: auto;
+  max-width: 400px;
 }
-nav {
-    background-color: transparent !important;
-    border: 0px !important;
+#intro .description h2 {
+  font-weight: 500;
 }
-#specialties li.active a,
-#specialties li a:hover {
-    color: #BC0000;
-    background-color: transparent;
-    border: 0px;
-    font-weight: normal;
+#intro .description .level {
+  width: 80px;
 }
-#specialties{
-    float: none;
-    list-style-type: none;
-    font-size: 20px;
-    text-align: center;
-    padding-left: 0;
-    margin-top: 15px;
-    margin-left: auto;
-    margin-right: auto;
+#intro .description .level a {
+  color: #4a4a4a;
 }
-#specialties li {
-    float: none;
-    display: block;
+#projects {
+  max-width: 1200px;
 }
-#specialties li a {
-    padding-bottom: 10px;
-    padding-top: 10px;
-    color: #2C3539;
+.center-block {
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
-#specialties li a:focus {
-    outline:none;
-    color: #BC0000;
+.margin-1-auto {
+  margin: 1rem auto;
 }
-#social-icons {
-    margin-top: 15px;
-    text-align: center;
-}
-#social-icons a {
-    color: black;
-    margin-left: 5px;
-    margin-right: 5px;
-    vertical-align: middle;
-}
-#social-icons a span {
-    font-size: 28px;
-}
-/* Make the medium icon a little smaller */
-#social-icons > :last-child span {
-    font-size: 26px;
-}
-.content-box {
-    margin-bottom: 80%;
-    background-color: white;
-    opacity: .8;
-    padding: 15px 20px 15px 20px;
-}
-.content-box:last-child {
-    margin-bottom: 56%;
-}
-.content-box ul {
-    list-style-type: none;
-    padding-left: 15px;
-    max-width: 50%;
-    margin-left: 15px;
-}
-
-.content-box h3 {
-    margin-top: 10px;
-    margin-bottom: 15px;
-    color: #BC0000;
-}
-.content-box h4 {
-    margin-top: 20px;
-}
-.content-box p {
-    letter-spacing: 0.25px;
-    line-height: 25px;
-}
-.content-box a {
-    color: #BC0000;
-}
-#projects-list {
-    list-style-type: none;
-    padding-left: 0px;
-}
-#projects-list li {
-    padding-bottom: 5px;
-}
-@media (max-width: 1200px) {
-    #header {
-        position: relative;
-        top: inherit;
-        left: inherit;
-        transform: translateX(0);
-    }
-    #specialties li {
-        display: inline-block;
-        margin: 5px;
-    }
-    .content-box {
-        margin-bottom: 5%;
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-    .content-box:last-child {
-        margin-bottom: 5%;
-    }
-}
-@media (max-width: 768px) {
-    body {
-        background: none;
-    }
-    /* Set the position to relative and the minimum height so the top-content
-     * will have space to be displayed. */
-    #navbar {
-        position: relative;
-        min-height: 250px;
-    }
-    #top-content {
-        background-color: white;
-        opacity: 0.8;
-        width: 90%;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .content-box {
-        border: 1px solid #2C3539;
-    }
-}
-@media (max-width: 500px) {
-    #top-content {
-        width: 85%;
-    }
-    #navbar {
-        min-height: 325px;
-    }
-    #specialties li {
-        display: block;
-        margin-bottom: 0px;
-    }
-    .content-box {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
+.padding-1 {
+  padding: 1rem;
 }
